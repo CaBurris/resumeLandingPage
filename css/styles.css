@@ -1,5 +1,12 @@
+html {
+    background: url(../img/background.jpg);
+    position: stretch;
+}
+
 .prof-box {
     width: 400px;
     height: 400px;
     background: rgba(0,0,0,.4);
+    padding: 40px;
+    color: white;
 }
