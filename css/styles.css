@@ -5,6 +5,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: "Calabria", sans-serif;
 }
 
 .prof-box {
@@ -13,4 +14,23 @@ html {
     background: rgba(0,0,0,.4);
     padding: 40px;
     color: white;
+    margin: 0 auto;
+    margin-top: 140px;
+    text-align: center;
 }
+
+.prof-pic {
+    border-radius: 40%;
+    height: 200px;
+    width: 270px;
+}
+
+h1 {
+    font-weight: 100px;
+    letter-spacing: 6;
+    font-size: 40px;
+}
+
+.fa {
+     font-family: 'FontAwesome' !important;
+ }
