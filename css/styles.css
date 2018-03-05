@@ -6,6 +6,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Calabria", sans-serif;
+  color: white;
 }
 
 .prof-box {
@@ -41,14 +42,18 @@ h1 {
     padding: 10px;
 }
 
+.social-icons a:hover {
+    background: rgba(0,0,0,.4);
+}
+
 .linkedin {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 
 .treehouse {
-    height: 40px;
-    width: 50px;
+    height: 50px;
+    width: 60px;
 }
 
 .line-break {
@@ -57,6 +62,7 @@ h1 {
     margin: 0 auto;
 }
 /* -------------------- Flex Containers--------------*/
+
 .nav-container {
     width: 750px;
     height: 40px;
@@ -72,7 +78,12 @@ h1 {
 
 
 }
-
+a {
+    color: pink;
+}
+nav a:hover {
+    background: rgba(0,0,0,.4);
+}
 nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -116,9 +127,7 @@ nav a {
     padding: 10px;
 }
 
-nav a:hover {
-    background-color: #555;
-}
+
 
 .main-container {
     display: flex;
