@@ -10,12 +10,12 @@ html {
 
 .prof-box {
     width: 400px;
-    height: 400px;
+    height: 550px;
     background: rgba(0,0,0,.4);
     padding: 40px;
     color: white;
     margin: 0 auto;
-    margin-top: 140px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -31,6 +31,28 @@ h1 {
     font-size: 40px;
 }
 
-.fa {
-     font-family: 'FontAwesome' !important;
- }
+.social-icons {
+    display: flex;
+    justify-content: center;
+
+}
+.social-icons a {
+    color: white;
+    padding: 10px;
+}
+
+.linkedin {
+    height: 40px;
+    width: 40px;
+}
+
+.treehouse {
+    height: 40px;
+    width: 50px;
+}
+
+.line-break {
+    width: 400px;
+    border-top: 1px solid white;
+    margin: 0 auto;
+}
