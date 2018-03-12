@@ -61,26 +61,15 @@ h1 {
     border-top: 1px solid white;
     margin: 0 auto;
 }
-/* -------------------- Flex Containers--------------*/
 
-.nav-container {
-    width: 750px;
-    height: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: rgba(0,0,0,.4);
-    //padding: 40px;
-    text-color: white;
-    margin: 0 auto;
-    //margin-top: 40px;
-    text-align: center;
-
-
+/*---------------- Body _________*/
+.snapshot {
+    height: 300px;
+    width: 400px;
 }
-a {
-    color: pink;
-}
+
+
+/*--------NAVIGATION------*/
 nav a:hover {
     background: rgba(0,0,0,.4);
 }
@@ -92,51 +81,136 @@ nav ul {
     //padding: 40px;
     justify-content: center;
     margin: 0 auto;
-    margin-right: 50px;
+    //margin-right: 50px;
     color: white;
 }
 
-nav li {
+nav li a {
     padding: 10px;
     display: block;
-    color: white;
+    color: pink;
 }
-    .aboutme {
-       flex: 1;
-       color: white;
+/*--------NAVIGATION------*/
 
-       }
-       .education {
-           flex: 1;
 
-       }
-       .skills {
-           flex: 1;
-
-       }
-       .employment {
-           flex: 1;
-       }
-
+/*-------------- Media Queries -----------------*/
+/*---- small screens ----*/
+/*------ Switching from device specific to CONTENT SPECIFIC ------ */
+@media only screen and (max-width: 570px) {
+    html {
+        padding:0;
+        margin: 0;
+    }
+    body {
+    //background: #E4E4E4;
+    height:100%;
+    width:100%;
 }
-nav a {
-    text-decoration: none;
-    text-align: center;
-    text-color: white;
+
+    .flex-grid {
+        display: block;
+    }
+    .nav-container {
+        //width: 70%;
+        //height: 40px;
+        display: block;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(0,0,0,.4);
+        //padding: 40px;
+        text-color: white;
+        margin: 100px;
+        margin-top: 0;
+        text-align: center;
+}
+/*
+.about-container{
     display: block;
-    padding: 10px;
+    background: white;
+    width:80%;
+    margin: 0 auto;
+    position: relative;
+    padding: 5px 5px 5px;
+}
+*/
+p {
+
+
+}
+
+@media only screen and (min-width: 850px) {
+    p {
+        font-color: red;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    p {
+        font-color: green;
+    }
 }
 
 
-
-.main-container {
+/*----------- CREATING  THE 5 MAIN FLEXBOXES -------*/
+/*---ABOUT---*/
+.about-container {
     display: flex;
-    //width: 1100px;
-    //height: 550px;
     background: rgba(0,0,0,.4);
-    //padding: 40px;
     color: white;
     margin: 40px;
-    //margin-top: 40px;
     text-align: center;
+    padding: 30px;
 }
+.degree {
+    width: 300px;
+    height: 300px;
+}
+.grad {
+    width: 300px;
+    height: 400px;
+}
+/*------ABOUT----*/
+
+/*-------EDUCATION-----*/
+.education-container {
+    display: flex;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+}
+/*-------EDUCATION-----*/
+
+/*-------SKILLS-----*/
+.skills-container {
+    display: flex;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+}
+/*-------SKILLS-----*/
+
+/*-------EXPERIENCE-----*/
+.experience-container {
+    display: flex;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+}
+/*-------EXPERIENCE-----*/
+
+/*-------EMPLOYMENT-----*/
+.employment-container {
+    display: flex;
+    background: rgba(0,0,0,.4);
+    color: white;
+    margin: 40px;
+    text-align: center;
+    padding: 30px;
+}
+/*-------EMPLOYMENT-----*/
